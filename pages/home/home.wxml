@@ -1,0 +1,66 @@
+<!-- 精选文章 -->
+<view id="hotArticleView">
+  <!-- 文章总标题 -->
+  <view id="hotArticleTitleView">精选文章</view>
+  <!-- 文章列表    Ctrl+C Ctrl+V：复制粘贴，如果没有选中任何文字则复制粘贴一行-->
+  <view class="articleView">
+    <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImg"></image>
+    <view class="articleContent">
+      <view class="artivcleTitle">你活出自我的样子，真美</view>
+      <view class="articleDesc">千百年来，古人总把人的品格与自然之物相联系起来，以花草树木之品性喻人的精神情操。</view>
+    </view>
+  </view>
+  <view class="articleView">
+    <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImg"></image>
+    <view class="articleContent">
+      <view class="artivcleTitle">这个救赎，因校园霸凌而起</view>
+      <view class="articleDesc">续《你的名字》之后，日本又出现了一个现象级的动漫电影---《声之形》</view>
+    </view>
+  </view>
+  <view class="articleView">
+    <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImg"></image>
+    <view class="articleContent">
+      <view class="artivcleTitle">抑郁症与抑郁情绪</view>
+      <view class="articleDesc">抑郁症是一种常见的精神疾病，主要表现为情绪低落，兴趣减低，悲观，思维迟缓</view>
+    </view>
+  </view>
+  <view class="articleView">
+    <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImg"></image>
+    <view class="articleContent">
+      <view class="artivcleTitle">抑郁症与抑郁情绪</view>
+      <view class="articleDesc">抑郁症是一种常见的精神疾病，主要表现为情绪低落，兴趣减低，悲观，思维迟缓</view>
+    </view>
+  </view>
+  <view class="articleView">
+    <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImg"></image>
+    <view class="articleContent">
+      <view class="artivcleTitle">抑郁症与抑郁情绪</view>
+      <view class="articleDesc">抑郁症是一种常见的精神疾病，主要表现为情绪低落，兴趣减低，悲观，思维迟缓</view>
+    </view>
+  </view>
+  <view class="articleView">
+    <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImg"></image>
+    <view class="articleContent">
+      <view class="artivcleTitle">抑郁症与抑郁情绪</view>
+      <view class="articleDesc">抑郁症是一种常见的精神疾病，主要表现为情绪低落，兴趣减低，悲观，思维迟缓</view>
+    </view>
+  </view>
+  <view class="articleView">
+    <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImg"></image>
+    <view class="articleContent">
+      <view class="artivcleTitle">抑郁症与抑郁情绪</view>
+      <view class="articleDesc">抑郁症是一种常见的精神疾病，主要表现为情绪低落，兴趣减低，悲观，思维迟缓</view>
+    </view>
+  </view>
+  <view class="articleView">
+    <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImg"></image>
+    <view class="articleContent">
+      <view class="artivcleTitle">抑郁症与抑郁情绪</view>
+      <view class="articleDesc">抑郁症是一种常见的精神疾病，主要表现为情绪低落，兴趣减低，悲观，思维迟缓</view>
+    </view>
+  </view>
+  <!-- 查看更多 -->
+  <view id="moreView">
+    <text bindtap="changeName" >查看更多</text>
+  </view>
+</view>

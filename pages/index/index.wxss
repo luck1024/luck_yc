@@ -1,0 +1,84 @@
+.search {
+  width: 100%;
+  height: 100%;
+}
+.van-search__content{
+  margin-top: -5px !important;
+}
+ /* .van-search__content--round{
+  margin-top: -5px !important;
+ } */
+.map_container {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 100rpx;
+  bottom: 100rpx;
+  left: 0;
+  right: 0;
+}
+ 
+.map {
+  width: 100%;
+  height: 100%;
+}
+ 
+.map_text {
+  width: 95%;
+  height:auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 2.5%;
+  overflow: hidden;
+}
+ 
+.map_text .navigation {
+  position: absolute;
+  right: 20rpx;
+  top: 35rpx;
+}
+ 
+.map_text .name {
+  line-height: 60rpx;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+}
+ 
+.map_text .desc {
+  width: 100%;
+  display: flex;
+  line-height: 35rpx;
+}
+ 
+.map_text .desc .address {
+  width: calc(100% - 120rpx);
+  width: -webkit-calc(100% - 120rpx);
+  width: -moz-calc(100% - 120rpx);
+  font-size: 25rpx;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+ 
+.odd_row {
+  color: #666;
+  padding: 10rpx 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: rgba(236, 255, 255, 0.8);
+  cursor: pointer;
+}
+ 
+.even_row {
+  color: #666;
+  padding: 10rpx 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: rgba(241, 255, 222, 0.8);
+  cursor: pointer;
+}

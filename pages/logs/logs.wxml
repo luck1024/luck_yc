@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+
+<!-- 轮播图 -->
+<swiper style="margin: 0 auto;" indicator-dots="true" autoplay="true" interval="2000" duration="500" circular="true">
+<swiper-item style="margin: 0 auto; width: 100%;" class="lp" wx:for="{{info}}" wx:key="*this"> 
+
+  <image class="rt" 	show-menu-by-longpress  src="{{item}}"></image>
+</swiper-item>
+</swiper>
+<button wx:if="{{!userInfo}}" bindtap="login">授权登录</button><!--授权登录-->
+ 
+<view wx:else class="root">
+  <image class="touxiang" src="{{userInfo.avatarUrl}}"></image>
+  <text class="nicheng">{{userInfo.nickName}}</text>
+  <button  bindtap="loginOut">退出登录</button><!--退出登录--> 
+</view>
+
+
+
+
+

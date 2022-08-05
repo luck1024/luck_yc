@@ -1,0 +1,41 @@
+/* 精选文章 */
+#hotArticleView{
+  padding: 0 30rpx;
+  background: #FFFFFF;
+  margin-bottom: 24rpx;
+}
+#hotArticleTitleView{
+  height: 88rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  border-bottom: 1rpx solid #F1EEF5;
+  line-height: 88rpx;
+}
+.articleView{
+  display: flex;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #F1EEF5;
+}
+.articleView image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+}
+.articleTitle{
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+.articleDesc{
+  font-size: 26rpx;
+  color: #B7B7B7;
+  line-height: 35rpx;
+}
+/* 精选文章---查看更多 */
+#moreView{
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #a39f9f;
+  position: relative;
+}

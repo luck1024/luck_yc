@@ -1,0 +1,28 @@
+<view class="search">
+  <van-search value="" placeholder="请输入要搜索的地址名称" data-city="{{city}}" data-longitude="{{longitude}}" data-latitude="{{latitude}}" bind:change="onInputChange" bind:focus="onInputFocus" shape="round"  background="#4fc08d" />
+
+</view>
+<!--地图-->
+<view wx:if="{{mapshow}}">
+  <view class="map_container">
+    <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+  </view>
+  <view class="map_text" wx:if="{{maptextshow}}">
+    <view class="name">{{textData.name}}</view>
+ 
+    <view class="desc">
+      <my-icon type="map;" size="35" color="#4295FA" />
+      <view class="address">{{textData.address}}<text style="color:#4295FA;" wx:if="{{range!=''}}">（距离你{{range}}）</text></view>
+    </view>
+ 
+    <view class="navigation" bindtap='map'>
+      <my-icon type="navigation;" size="70" color="#0AC408" />
+    </view>
+  </view>
+</view>
+<!--搜索相关内容-->
+<view wx:if="{{tipshow}}">
+  <view bindtouchstart="bindSearch" data-keywords="{{item.name}}" class="{{index % 2 == 0?'odd_row':'even_row'}}" data-index="{{index}}" wx:for="{{tips}}" wx:for-item="item" wx:key="mykey">
+    {{item.name}}
+  </view>
+</view>
